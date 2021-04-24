@@ -2,9 +2,10 @@
   --primery-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --ptimery-bg-color: #e5e5e5;
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--ptimery-bg-color);
   color: var(--primery-text-color);
 }
