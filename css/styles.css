@@ -1,11 +1,101 @@
 :root {
-  --primery-text-color: #757575;
-  --title-text-color: #212121;
+  --text-color: #757575;
+  --title-color: #212121;
   --accent-color: #2196f3;
-  --ptimery-bg-color: #e5e5e5;
+  --bg-color: #e5e5e5;
+  --button-color: #f5f4fa;
+  --white-color: #fff;
+  --black-color: #000;
+  --hero-color: #2f303a;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.list {
+  list-style: none;
 }
 
-body {
-  background-color: var(--ptimery-bg-color);
-  color: var(--primery-text-color);
+/* Логотип */
+.logo {
+  color: var(--accent-color);
+}
+
+/* Навігація сторінки */
+.site-nav .link {
+  color: var(--title-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.contact .link {
+  color: var(--text-color);
+}
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--hero-color);
+}
+.hero-title {
+  color: var(--white-color);
+}
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-color);
+  color: var(--title-text-color);
+}
+
+/* Головна сторінка */
+.section-title {
+  color: var(--title-color);
+}
+.section.team {
+  background-color: var(--button-color);
+}
+
+/* Features */
+.feature .title {
+  color: var(--title-color);
+}
+
+/* Команда */
+.team .title {
+  color: var(--title-color);
+}
+
+/* Фільтр кнопок*/
+.filter .button {
+  background-color: var(--button-color);
+  color: var(--title-color);
+}
+.filter .button:hover,
+.filter .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* Портфоліо */
+
+/* Підвал сторінки */
+.footer {
+  background-color: var(--hero-color);
+}
+.phys-address {
+  color: var(--white-color);
+}
+
+.contact.list .link {
+  color: rgba(255, 255, 255, 0.6);
 }
