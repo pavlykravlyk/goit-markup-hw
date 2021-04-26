@@ -8,22 +8,49 @@
   --black-color: #000;
   --hero-color: #2f303a;
 }
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
+
 .list {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 /* Логотип */
+
 .logo {
   color: var(--accent-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.accent.black {
+  color: var(--black-color);
+}
+
+.accent.white {
+  color: var(--white-color);
 }
 
 /* Навігація сторінки */
+
 .site-nav .link {
   color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -32,25 +59,50 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-.contact .link {
-  color: var(--text-color);
-}
+
+/* Пошта та телефон */
+
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
 }
 
-/* Герой */
-.hero {
-  background-color: var(--hero-color);
+.contact .primery {
+  color: var(--text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
+
+/* Герой */
+
+/* .hero {
+  background-color: var(--hero-color);
+} */
+
 .hero-title {
   color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
 }
+
 .hero-button {
   background-color: var(--accent-color);
   color: var(--white-color);
+
+  font-family: inherit;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-color);
@@ -60,26 +112,59 @@ body {
 /* Головна сторінка */
 .section-title {
   color: var(--title-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
 }
+
 .section.team {
   background-color: var(--button-color);
 }
 
-/* Features */
-.feature .title {
+/* Особливості*/
+
+.feature.list .title {
   color: var(--title-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
-/* Команда */
+.feature.list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Наша команда */
 .team .title {
   color: var(--title-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team.list .text {
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* Фільтр кнопок*/
+
 .filter .button {
   background-color: var(--button-color);
   color: var(--title-color);
+
+  font-family: inherit;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
+
 .filter .button:hover,
 .filter .button:focus {
   background-color: var(--accent-color);
@@ -88,14 +173,43 @@ body {
 
 /* Портфоліо */
 
-/* Підвал сторінки */
-.footer {
-  background-color: var(--hero-color);
-}
-.phys-address {
-  color: var(--white-color);
+/* .portfolio-title {
+} */
+
+.portfolio .title {
+  color: var(--title-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.contact.list .link {
+.portfolio .text {
+  color: var(--text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Підвал сторінки */
+
+/* footer {
+  background-color: var(--hero-color);
+} */
+
+.physical-address {
+  color: var(--white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contact .secondery {
   color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
