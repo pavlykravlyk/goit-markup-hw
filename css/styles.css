@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--white-color);
   color: var(--text-color);
 
   font-family: 'Roboto', sans-serif;
@@ -78,9 +78,9 @@ body {
 
 /* Герой */
 
-/* .hero {
+.hero {
   background-color: var(--hero-color);
-} */
+}
 
 .hero-title {
   color: var(--white-color);
@@ -103,11 +103,11 @@ body {
   letter-spacing: 0.06em;
 }
 
-.hero-button:hover,
+/* .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-color);
   color: var(--title-text-color);
-}
+} */
 
 /* Головна сторінка */
 .section-title {
@@ -194,9 +194,9 @@ body {
 
 /* Підвал сторінки */
 
-/* footer {
+footer {
   background-color: var(--hero-color);
-} */
+}
 
 .physical-address {
   color: var(--white-color);
@@ -212,4 +212,20 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+/* Прихований контент */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
