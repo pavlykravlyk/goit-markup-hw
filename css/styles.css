@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Решта коду */
+
 :root {
   --text-color: #757575;
   --title-color: #212121;
