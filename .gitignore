@@ -77,3 +77,4 @@ typings/
 
 # VScode settings
 .vscode
+.prettierrc.json
