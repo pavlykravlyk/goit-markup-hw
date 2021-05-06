@@ -6,8 +6,10 @@
   --white-color: #fff;
   --black-color: #000;
   --hero-color: #2f303a;
+  --border-card-color: #eeeeee;
+  --border-header-color: #ececec;
 
-  --portfolio-gap: 30px;
+  --gap: 30px;
 }
 
 /* h1,
@@ -49,6 +51,10 @@ body {
 }
 
 /* Шапка сторінки */
+
+.page-header {
+  border-bottom: 1px solid var(--border-header-color);
+}
 
 .main-nav {
   display: flex;
@@ -134,7 +140,7 @@ body {
 .hero {
   background-color: var(--hero-color);
   text-align: center;
-  margin-bottom: 94px;
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -161,7 +167,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-align: center;
+  text-align: inherit;
 
   display: inline-block;
   border-radius: 4px;
@@ -185,19 +191,28 @@ body {
 .section-title {
   color: var(--title-color);
 
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 
   margin-bottom: 50px;
+  margin-top: 0px;
 }
 
-.section.team {
-  background-color: var(--button-color);
+/*==> Особливості <==*/
+.feature.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--gap));
+  margin-left: calc(-1 * var(--gap));
 }
 
-/* Особливості*/
+.feature .item {
+  flex-basis: calc(100% / 4 - var(--gap));
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+}
 
 .feature.list .title {
   color: var(--title-color);
@@ -206,18 +221,71 @@ body {
   font-size: 14px;
   line-height: 1.14;
 
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
 .feature.list .text {
   font-size: 14px;
   line-height: 1.71;
+
+  padding: 0;
+  margin: 0;
+}
+/*==> END Особливості <==*/
+
+/*==> Чим ми займаємося <==*/
+.about.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--gap));
+  margin-left: calc(-1 * var(--gap));
 }
 
-/* Наша команда */
-/* .team.list img {
-  margin-bottom: 30px;
-} */
+.about .item {
+  flex-basis: calc(100% / 3 - var(--gap));
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+}
+
+.about .image {
+  display: block;
+  max-width: 100%;
+}
+/*==> END Чим ми займаємося <==*/
+
+/*==> Наша команда <==*/
+.section.team {
+  background-color: var(--button-color);
+}
+
+.team.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--gap));
+  margin-left: calc(-1 * var(--gap));
+}
+
+.team .item {
+  flex-basis: calc(100% / 4 - var(--gap));
+  margin-left: var(--gap);
+  margin-top: var(--gap);
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team .content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.team .image {
+  display: block;
+  max-width: 100%;
+}
 
 .team .title {
   color: var(--title-color);
@@ -226,20 +294,22 @@ body {
   font-size: 16px;
   line-height: 1.19;
 
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
 .team.list .text {
+  margin: 0;
+
   font-size: 16px;
   line-height: 1.19;
 }
+/*==> END Наша команда <==*/
 
-/* Фільтр кнопок*/
-
+/*==> Фільтр кнопок <==*/
 .filter.list {
   display: flex;
   justify-content: center;
-
   margin: 0 0 50px 0;
 }
 
@@ -267,12 +337,12 @@ body {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
+/*==> END Фільтр кнопок <==*/
 
 /* Сітка Портфоліо */
-
 .portfolio.list {
-  margin-left: calc(-1 * var(--portfolio-gap));
-  margin-top: calc(-1 * var(--portfolio-gap));
+  margin-left: calc(-1 * var(--gap));
+  margin-top: calc(-1 * var(--gap));
 
   list-style: none;
   display: flex;
@@ -280,9 +350,9 @@ body {
 }
 
 .portfolio .item {
-  flex-basis: calc(100% / 3 - var(--portfolio-gap));
-  margin-left: var(--portfolio-gap);
-  margin-top: var(--portfolio-gap);
+  flex-basis: calc(100% / 3 - var(--gap));
+  margin-left: var(--gap);
+  margin-top: var(--gap);
 }
 
 .portfolio .image {
@@ -293,6 +363,7 @@ body {
 
 .portfolio .content {
   padding: 20px 24px;
+  border: 1px solid var(--border-card-color);
 }
 
 .portfolio .title {
