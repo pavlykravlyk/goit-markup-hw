@@ -363,7 +363,9 @@ body {
 
 .portfolio .content {
   padding: 20px 24px;
-  border: 1px solid var(--border-card-color);
+  border-bottom: 1px solid var(--border-card-color);
+  border-left: 1px solid var(--border-card-color);
+  border-right: 1px solid var(--border-card-color);
 }
 
 .portfolio .title {
@@ -396,6 +398,10 @@ body {
 .page-footer .container {
   padding: 60px 15px;
   margin-bottom: 0;
+}
+
+.footer-address-links{
+  margin-right: auto;
 }
 
 /* Логотип підвалу */
