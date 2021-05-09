@@ -200,6 +200,10 @@ body {
 }
 
 /*==> Особливості <==*/
+.section.feature {
+  padding-bottom: 0;
+}
+
 .feature.list {
   display: flex;
   flex-wrap: wrap;
@@ -400,7 +404,7 @@ body {
   margin-bottom: 0;
 }
 
-.footer-address-links{
+.footer-address-links {
   margin-right: auto;
 }
 
