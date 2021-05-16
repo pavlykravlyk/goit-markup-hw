@@ -197,6 +197,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  text-transform: uppercase;
 
   margin: 0 auto 30px auto;
 }
@@ -250,7 +251,10 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: var(--button-color);
-  padding: 25px 100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feature .icon {
@@ -359,11 +363,12 @@ body {
 }
 
 .team-social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 12px;
   background-color: var(--white-color);
   color: #afb1b8;
 }
@@ -395,13 +400,15 @@ body {
 }
 
 .clients .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   color: #afb1b8;
-  padding: 16px 32px;
 }
 
 .clients .link:hover,
@@ -466,7 +473,12 @@ body {
   margin-top: var(--gap);
 }
 
-.portfolio .item:hover {
+.card.link {
+  display: block;
+}
+
+.card.link:hover,
+.card.link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -524,7 +536,6 @@ body {
 }
 
 /* Логотип підвалу */
-
 .page-footer .logo .accent {
   color: var(--white-color);
 }
@@ -557,7 +568,7 @@ body {
 }
 /* присоединяйтесь */
 .page-footer .social {
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 
 .social .title {
@@ -578,10 +589,11 @@ body {
 }
 
 .page-footer .social .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
