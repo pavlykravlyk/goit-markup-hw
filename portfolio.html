@@ -20,9 +20,7 @@
     <header class="page-header">
       <div class="container main-nav">
         <nav class="site-nav">
-          <a class="logo" href="./index.html"
-            >Web<span class="accent">Studio</span></a
-          >
+          <a class="logo" href="./index.html">Web<span class="accent">Studio</span></a>
           <ul class="site-nav list">
             <li class="item">
               <a class="link" href="./index.html">Студия</a>
@@ -35,17 +33,18 @@
             </li>
           </ul>
         </nav>
-
+    
         <ul class="contact list">
           <li class="item">
-            <a class="primery link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="primery link" href="mailto:info@devstudio.com">
+              <svg class="icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
           </li>
           <li class="item">
-            <a class="primery link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="primery link" href="tel:+380961111111"><svg class="icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -90,7 +89,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" href="">
+              <a class="card link" href="">
                 <img
                   class="image"
                   src="./images/portfolio/project2.jpg"
@@ -107,7 +106,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" href="">
+              <a class="card link" href="">
                 <img
                   class="image"
                   src="./images/portfolio/project3.jpg"
@@ -122,7 +121,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" href="">
+              <a class="card link" href="">
                 <img
                   class="image"
                   src="./images/portfolio/project4.jpg"
@@ -137,7 +136,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" href="">
+              <a class="card link" href="">
                 <img
                   class="image"
                   src="./images/portfolio/project5.jpg"
@@ -152,7 +151,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" href="">
+              <a class="card link" href="">
                 <img
                   class="image"
                   src="./images/portfolio/project6.jpg"
@@ -167,7 +166,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" href="">
+              <a class="card link" href="">
                 <img
                   class="image"
                   src="./images/portfolio/project7.jpg"
@@ -184,7 +183,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" href="">
+              <a class="card link" href="">
                 <img
                   class="image"
                   src="./images/portfolio/project8.jpg"
@@ -199,7 +198,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="link" href="">
+              <a class="card link" href="">
                 <img
                   class="image"
                   src="./images/portfolio/project9.jpg"
@@ -221,32 +220,56 @@
     <!-- Підвал сторінки -->
     <footer class="page-footer">
       <div class="container">
-        <a class="logo" href="./index.html"
-          >Web<span class="accent">Studio</span></a
-        >
-        <address>
-          <ul class="contact list">
-            <li class="list-item">
-              <a
-                class="physical-address link"
-                href="https://goo.gl/maps/RG4NcfdEYZFMfPUG8"
-                target="_blank"
-                rel="noreferrer noopener"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
+        <div class="footer-address-links">
+          <a class="logo" href="./index.html">Web<span class="accent">Studio</span></a>
+          <address>
+            <ul class="contact list">
+              <li class="list-item">
+                <a class="physical-address link" href="https://goo.gl/maps/RG4NcfdEYZFMfPUG8" target="_blank"
+                  rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="list-item">
+                <a class="secondery link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="list-item">
+                <a class="secondery link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social">
+          <b class="title">присоединяйтесь</b>
+          <ul class="list">
+            <li class="item">
+              <a class="link" target="_blank" rel="noreferrer noopener" href="https://www.instagram.com/">
+                <svg class="icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list-item">
-              <a class="secondery link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <li class="item">
+              <a class="link" target="_blank" rel="noreferrer noopener" href="https://twitter.com/">
+                <svg class="icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list-item">
-              <a class="secondery link" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
+            <li class="item">
+              <a class="link" target="_blank" rel="noreferrer noopener" href="https://facebook.com/">
+                <svg class="icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a class="link" target="_blank" rel="noreferrer noopener" href="https://linkedin.com/">
+                <svg class="icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
